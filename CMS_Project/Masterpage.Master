@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="CMS_Project.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Content Management System</title>
+    <link rel="stylesheet" type="text/css" href="Style/StyleSheet.css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div id="banner">
+
+            </div>
+            <ul id="navigation">
+
+            </ul>
+            <div id="content_area">
+
+            </div>
+            <div id="sidebar">
+
+            </div>
+            <div id="footer">
+                <p>All rights reserved</p>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
