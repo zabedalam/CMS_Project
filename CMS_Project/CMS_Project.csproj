@@ -138,7 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pictures\" />
-    <Folder Include="za\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Masterpage.Master" />
