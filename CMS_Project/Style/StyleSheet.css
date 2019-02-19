@@ -56,12 +56,12 @@ body {
     margin: auto;
 }
 
-.container {
+/*.container {
     background: #ddd;
     padding: 0.5em;
     grid-gap: 1.5em;
     
-}
+}*/
 
 .item {
     background: #7fbbd6;
@@ -85,21 +85,22 @@ body {
 /*****************/
 
 .container {
+    background: #ddd;
+    padding: 0.5em;
+    grid-gap: 1.5em;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
 }
 .one{
     grid-row:span 3;
 }
-
 .three {
     display:grid;
     grid-template-columns:repeat(4,1fr);
     grid-row: span 4;
     grid-gap:.4em;
-    
-}
 
+}
 .seven{
     grid-row:span 2;
 }
