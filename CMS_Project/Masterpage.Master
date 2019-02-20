@@ -13,10 +13,30 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="item one">1</div>
-            <div class="item two">2</div>
+            <div class="item one">
+                
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/banner.jpg" style="Width:100%;"/>
+                
+                </div>
+            <div class="item two"><div id="navigation">
+            <ul id="nav">
+                <li><a href="~/index.aspx" runat="server">Home</a></li>
+
+                <li><a href="#">Reviews</a>
+                    <ul>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Coffee Shops</a></li>
+                        <li><a href="#">Coffee brands</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div></div>
             <div class="item three">
-                <div class="sub-item">3</div>
+                <div class="sub-item">
+                    <asp:ListBox ID="ListBox1" runat="server" Height="500px" Width="300px"></asp:ListBox>
+                    </div>
                 <div class="sub-item">4</div>
                 <div class="sub-item">5</div>
                 <div class="sub-item">6</div>
@@ -25,6 +45,8 @@
             <div class="item seven">7</div>
 
         </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
 
     </form>
 </body>

@@ -105,14 +105,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Theme_Home\Style_Home.css" />
     <Content Include="App_Themes\Theme_Indoor\Style_Indoor.css" />
     <Content Include="App_Themes\Theme_Outdoor\Style_Outdoor.css" />
+    <Content Include="index.aspx" />
     <Content Include="Indoor.aspx" />
+    <Content Include="Pictures\banner.jpg" />
     <Content Include="Style\StyleSheet.css" />
     <Content Include="Web.config" />
     <Content Include="Outdoor.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Indoor.aspx.cs">
       <DependentUpon>Indoor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,13 +146,12 @@
       <DependentUpon>Outdoor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pictures\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Masterpage.Master" />
     <Content Include="App_Themes\Theme_Indoor\Skin_Indoor.skin" />
     <Content Include="App_Themes\Theme_Outdoor\Skin_Outdoor.skin" />
+    <Content Include="App_Themes\Theme_Home\Skin_Home.skin" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
