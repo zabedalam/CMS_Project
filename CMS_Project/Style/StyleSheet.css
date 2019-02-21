@@ -1,60 +1,36 @@
-﻿/*body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:aliceblue;
+﻿
+
+/*Grid layout*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-#wrapper{
-    width:1080px;
-    margin:0 auto;
-    padding:10px;
-    border:5px solid #b6ff00;
-    background-color:#fff;
-}
-#banner{
-    height:200px;
-    border:3px solid #4cff00;
-}
-#navigation {
-    margin-left:auto;
-    height: 60px;
-    border: 3px solid #4cff00;
-    margin-top: 20px;
-}
-#content_area{
-    float:left;
-    width:750px;
-    margin:20px 0 20px 0;
-    padding:10px;
-    border:3px solid #ffd800;
-}
-#sidebar {
-    float: right;
-    width: 250px;
-    height: 400px;
-    margin: 20px 10px 20px 10px;
-    border: 3px solid #ffd800;
+body {
     
+    font-family: sans-serif;
+    margin: auto;
 }
-#footer{
-    clear:both;
-    width:auto;
-    height:40px;
-    margin-top:20px;
-
-}*/
-/*from coffee shop*/
+#wrapper {
+    width: 1080px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #dedede;
+}
 #navigation {
-    height: 60px;
-    border: 3px solid #E3E3E3;
-    margin-top: 20px;
-    background-image: url(../Images/bar_background.png);
+    height: 100%;
+    border: 3px solid red;
+    
+    background-image: url(../Pictures/banner.jpg);
+    background-size:cover;
     text-shadow: 0.1em 0.1em #333;
 }
 
 #nav {
     list-style: none;
 }
-
     #nav ul {
         list-style: none;
         margin: 0;
@@ -71,8 +47,8 @@
         height: 50px;
     }
 
-        #nav li ul li {
-            background-image: url(../Images/bar_background.png);
+        #nav ul li {
+            background-image: url(../Pictures/banner.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             border: 3px solid #E3E3E3;
@@ -86,33 +62,16 @@
     }
 
     #nav a:hover {
-        color: lightblue;
+        color: hotpink;
     }
 
 
-/*Grid layout*/
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
 
-body {
-    
-    font-family: sans-serif;
-    margin: auto;
-}
 
-/*.container {
-    background: #ddd;
-    padding: 0.5em;
-    grid-gap: 1.5em;
-    
-}*/
 
 .item {
     background: #7fbbd6;
-    /* margin: 0.5em; */
+     margin: 0.5em; 
     padding: 0.5em;
     color: white;
     font-size: 2em;
@@ -120,10 +79,7 @@ body {
 }
 
 .sub-item {
-    /* background: #43743a;
-  width: 1em;
-  margin: 0.5em;
-  padding: 0.5em; */
+   
     background: #41642f;
     margin-bottom: 0.4em;
     padding: 0.4em;
@@ -152,3 +108,5 @@ body {
 .seven{
     grid-row:span 2;
 }
+
+

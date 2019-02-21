@@ -109,11 +109,12 @@
     <Content Include="App_Themes\Theme_Indoor\Style_Indoor.css" />
     <Content Include="App_Themes\Theme_Outdoor\Style_Outdoor.css" />
     <Content Include="index.aspx" />
-    <Content Include="Indoor.aspx" />
+    <Content Include="indoor.aspx" />
+    <Content Include="JavaScript\jquery-1.3.2.min.js" />
     <Content Include="Pictures\banner.jpg" />
     <Content Include="Style\StyleSheet.css" />
     <Content Include="Web.config" />
-    <Content Include="Outdoor.aspx" />
+    <Content Include="outdoor.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="index.aspx.cs">
@@ -123,12 +124,12 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Indoor.aspx.cs">
-      <DependentUpon>Indoor.aspx</DependentUpon>
+    <Compile Include="indoor.aspx.cs">
+      <DependentUpon>indoor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Indoor.aspx.designer.cs">
-      <DependentUpon>Indoor.aspx</DependentUpon>
+    <Compile Include="indoor.aspx.designer.cs">
+      <DependentUpon>indoor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Masterpage.Master.cs">
       <DependentUpon>Masterpage.Master</DependentUpon>
@@ -138,12 +139,12 @@
       <DependentUpon>Masterpage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Outdoor.aspx.cs">
-      <DependentUpon>Outdoor.aspx</DependentUpon>
+    <Compile Include="outdoor.aspx.cs">
+      <DependentUpon>outdoor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Outdoor.aspx.designer.cs">
-      <DependentUpon>Outdoor.aspx</DependentUpon>
+    <Compile Include="outdoor.aspx.designer.cs">
+      <DependentUpon>outdoor.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

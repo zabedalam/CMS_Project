@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="CMS_Project.Masterpage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.Master.cs" Inherits="CMS_Project.Masterpage" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Management System</title>
-    <link rel="stylesheet"  href="Style/StyleSheet.css" />
+    <script type="text/javascript" src="../JavaScript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet"   href="Style/StyleSheet.css" />
 
 </head>
 <body>
@@ -18,21 +35,22 @@
                     <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/banner.jpg" style="Width:100%;"/>
                 
                 </div>
-            <div class="item two"><div id="navigation">
+            <div class="item two">
+             <div id="navigation">   
             <ul id="nav">
                 <li><a href="~/index.aspx" runat="server">Home</a></li>
 
-                <li><a href="#">Reviews</a>
+                <li><a href="#">Activity</a>
                     <ul>
-                        <li><a href="#">Coffee</a></li>
-                        <li><a href="#">Coffee Shops</a></li>
-                        <li><a href="#">Coffee brands</a></li>
+                        <li><a href="~/indoor.aspx" runat="server">Indoor</a></li>
+                        <li><a href="~/outdoor.aspx" runat="server">Outdoor</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Management</a></li>
             </ul>
-        </div></div>
+        </div>
+                </div>
+
             <div class="item three">
                 <div class="sub-item">
                     <asp:ListBox ID="ListBox1" runat="server" Height="500px" Width="300px"></asp:ListBox>
@@ -51,3 +69,5 @@
     </form>
 </body>
 </html>
+
+
