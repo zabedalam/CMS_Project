@@ -1,9 +1,12 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.Master.cs" Inherits="CMS_Project.Masterpage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="CMS_Project.Masterpage1" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Management System</title>
@@ -26,48 +29,36 @@
     </script>
     <link rel="stylesheet"   href="Style/StyleSheet.css" />
 
+
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
-            <div class="item one">
-                
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Pictures/banner.jpg" style="Width:100%;"/>
-                
-                </div>
-            <div class="item two">
-             <div id="navigation">   
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
             <ul id="nav">
                 <li><a href="~/index.aspx" runat="server">Home</a></li>
 
-                <li><a href="#">Activity</a>
+                <li><a href="#">Activities</a>
                     <ul>
-                        <li><a href="~/indoor.aspx" runat="server">Indoor</a></li>
-                        <li><a href="~/outdoor.aspx" runat="server">Outdoor</a></li>
+                        <li><a href="~/indoor.aspx" runat="server">Indoor Accessories</a></li>
+                        <li><a href="~/outdoor.aspx" runat="server">Outdoor Accessories</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Management</a></li>
+                 <li><a href="#">Admin</a></li>
             </ul>
         </div>
-                </div>
-
-            <div class="item three">
-                <div class="sub-item">
-                    <asp:ListBox ID="ListBox1" runat="server" Height="500px" Width="300px"></asp:ListBox>
-                    </div>
-                <div class="sub-item">4</div>
-                <div class="sub-item">5</div>
-                <div class="sub-item">6</div>
-
-            </div>
-            <div class="item seven">7</div>
-
-        </div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div id="content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-
+        </div>
+        <div id="sidebar">
+        </div>
+        <div id="footer">
+            <p>All Rights reserved.</p>
+        </div>
+    </div>
     </form>
 </body>
 </html>
-
-
