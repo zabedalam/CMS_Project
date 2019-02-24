@@ -141,7 +141,6 @@
     <Content Include="Images\banner1.jpg" />
     <Content Include="SportsItemOverview.aspx" />
     <Content Include="Style\StyleSheet.css" />
-    <Content Include="Style\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="outdoor.aspx" />
   </ItemGroup>

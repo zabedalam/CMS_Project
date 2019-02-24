@@ -54,6 +54,35 @@
             </asp:ContentPlaceHolder>
         </div>
         <div id="sidebar">
+            <%--<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                    <HeaderTemplate>
+                <table class="table">
+                   <%-- <tr>
+                        <td class="header">Product Name</td>
+                        <td class="header">Price</td>
+                        <td class="header">Picture</td>
+                    </tr>--%>
+                
+           <%-- </HeaderTemplate>
+                <ItemTemplate>
+                    <tr>
+                        <td class="item"><%#Eval("Jokes_text") %></td>
+                        <%--<td class="item"><%#Eval("Item_price") %></td>
+                        <td class="item"><img src="Images/<%#Eval("Item_image") %>" alt="Indoor"/></td>--%>
+
+                    <%--</tr>
+
+                </ItemTemplate>
+                
+                <FooterTemplate>
+                    </table>
+                </FooterTemplate>
+                </asp:Repeater>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CMS_DATABASEConnectionString3 %>" SelectCommand="SELECT [Jokes_text], [Selection_Id] FROM [Jokes] where Selection_Id=1"></asp:SqlDataSource>
+            </asp:ContentPlaceHolder>--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
         <div id="footer">
             <p>All Rights reserved.</p>
