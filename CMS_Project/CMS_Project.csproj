@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddSportsItem.aspx" />
     <Content Include="App_Themes\Theme_Home\Style_Home.css" />
     <Content Include="App_Themes\Theme_Indoor\Style_Indoor.css" />
     <Content Include="App_Themes\Theme_Outdoor\Style_Outdoor.css" />
@@ -138,12 +139,21 @@
     <Content Include="indoor.aspx" />
     <Content Include="JavaScript\jquery-1.3.2.min.js" />
     <Content Include="Images\banner1.jpg" />
+    <Content Include="SportsItemOverview.aspx" />
     <Content Include="Style\StyleSheet.css" />
     <Content Include="Style\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="outdoor.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddSportsItem.aspx.cs">
+      <DependentUpon>AddSportsItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSportsItem.aspx.designer.cs">
+      <DependentUpon>AddSportsItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionUtility.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,12 +168,20 @@
     <Compile Include="indoor.aspx.designer.cs">
       <DependentUpon>indoor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
     <Compile Include="Masterpage.Master.cs">
       <DependentUpon>Masterpage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Masterpage.Master.designer.cs">
       <DependentUpon>Masterpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterpageCMS.Master.cs">
+      <DependentUpon>MasterpageCMS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterpageCMS.Master.designer.cs">
+      <DependentUpon>MasterpageCMS.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="outdoor.aspx.cs">
@@ -173,6 +191,13 @@
     <Compile Include="outdoor.aspx.designer.cs">
       <DependentUpon>outdoor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SportsItemOverview.aspx.cs">
+      <DependentUpon>SportsItemOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SportsItemOverview.aspx.designer.cs">
+      <DependentUpon>SportsItemOverview.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -180,6 +205,7 @@
     <Content Include="App_Themes\Theme_Outdoor\Skin_Outdoor.skin" />
     <Content Include="App_Themes\Theme_Home\Skin_Home.skin" />
     <Content Include="Masterpage.Master" />
+    <Content Include="MasterpageCMS.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

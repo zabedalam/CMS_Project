@@ -131,3 +131,24 @@
     font-size: 2em;
     text-align: center;
 }
+
+/*************Repeater CSS******************/
+.table {
+    border-style: double;
+    border-color: black;
+    border-width: 1.2em;
+}
+
+.header {
+    padding: .5em;
+    font-family: Verdana;
+    font-size: 3.2em;
+}
+
+.item {
+    border-style: solid;
+    border-color: black;
+    padding: .5em;
+    font-family: Verdana;
+    font-size: 2.4em;
+}

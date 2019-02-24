@@ -10,16 +10,25 @@
 namespace CMS_Project {
     
     
-    public partial class Indoor {
+    public partial class SportsItemOverview {
         
         /// <summary>
-        /// RepeaterIndoor control.
+        /// LinkButtonAddItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RepeaterIndoor;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonAddItem;
+        
+        /// <summary>
+        /// GridViewSportsItemOverview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewSportsItemOverview;
         
         /// <summary>
         /// SqlDataSource1 control.
@@ -29,14 +38,5 @@ namespace CMS_Project {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
-        /// LabelMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelMessage;
     }
 }

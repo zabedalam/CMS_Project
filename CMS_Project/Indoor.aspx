@@ -2,23 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Repeater ID="RepeaterIndoor" runat="server">
         <HeaderTemplate>
-                <table class="mytable">
+                <table class="table">
                     <tr>
-                        <td class="myheader">Item_Id</td>
-                        <td class="myheader">Item_name</td>
-                        <td class="myheader">Item_price</td>
-                        <%--<td class="myheader">Birthday</td>--%>
-                        <td class="myheader">Item_image</td>
+                        <td class="header">Product Name</td>
+                        <td class="header">Price</td>
+                        <td class="header">Picture</td>
                     </tr>
                 
             </HeaderTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td class="myItem"><%#Eval("Item_Id") %></td>
-                        <td class="myItem"><%#Eval("Item_name") %></td>
-                        <td class="myItem"><%#Eval("Item_price") %></td>
-                        <%--<td class="myItem"><%#Eval("Birthday","{0:dd-MM-yyyy}") %></td>--%>
-                        <td class="myItem"><img src="Images/<%#Eval("Item_image") %>" alt="Indoor"/></td>
+                        <td class="item"><%#Eval("Item_name") %></td>
+                        <td class="item"><%#Eval("Item_price") %></td>
+                        <td class="item"><img src="Images/<%#Eval("Item_image") %>" alt="Indoor"/></td>
 
                     </tr>
 
@@ -30,7 +26,5 @@
     </asp:Repeater>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
     <asp:Label ID="LabelMessage" runat="server" Text="Result"></asp:Label>
-    <%--<td class="myheader">Birthday</td>--%><%#Eval("Item_Id") %>
-    <br />
-    <asp:Button ID="ButtonShow" runat="server" OnClick="ButtonShow_Click" Text="Show" />
+    
 </asp:Content>

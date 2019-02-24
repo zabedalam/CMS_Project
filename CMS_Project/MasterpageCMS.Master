@@ -53,8 +53,6 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <div id="sidebar">
-        </div>
         <div id="footer">
             <p>All Rights reserved.</p>
         </div>
