@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Text;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace CMS_Project
@@ -21,8 +12,9 @@ namespace CMS_Project
         protected void Page_Load(object sender, EventArgs e)
         {
             RepeaterIndoor.DataBind();
-            //LabelMessage.Text = "No error message";
-
+            sqlsel = "select * from Item where Selection_Id=1";
+            ShowMyData();
+            
         }
 
         public void ShowMyData()
@@ -34,7 +26,7 @@ namespace CMS_Project
                 rdr = cmd.ExecuteReader();
                 RepeaterIndoor.DataSource = rdr;
                 RepeaterIndoor.DataBind();
-                //LabelMessage.Text = "after databind";
+                
             }
             catch (Exception ex)
             {
@@ -46,10 +38,6 @@ namespace CMS_Project
             }
         }
 
-        protected void ButtonShow_Click(object sender, EventArgs e)
-        {
-            sqlsel = "select top 5 * from Item";
-            ShowMyData();
-        }
+        
     }
 }
